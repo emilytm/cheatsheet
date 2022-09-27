@@ -1,0 +1,46 @@
+
+
+* {
+    font-family: 'Inter Tight',Helvetica, sans-serif;
+}
+
+body {
+    margin: 24px;
+}
+
+table {
+    border: 8px solid rgb(179, 0, 66);
+    border-collapse: collapse;
+}
+.vertical-header {
+    background-color: rgb(255, 83, 3);
+}
+.overlap {
+    background-color: rgb(255,42,55);
+}
+
+.table-head {
+    background-color: rgb(255, 0, 106);
+}
+.overall-header {
+    background-color: rgb(217,0,86);
+}
+th {
+    padding: 8px;
+    color:blanchedalmond;
+}
+
+tfoot {
+    font-weight: 600;
+    padding:16px;
+    color:black;
+    background-color: rgb(255, 127, 180);
+}
+tfoot .td {
+    color: black;
+}
+td {
+    padding: 8px;
+    font-weight: 400;
+    color:indigo;
+}
