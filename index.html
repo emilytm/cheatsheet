@@ -26,7 +26,7 @@
 
 
     <h2 id="tables">Tables and their Components</h2>
-    <div class="topic">
+    <div class="topic tables">
         <table>
             <tr class="overall-header">
                 <th colspan="4">This table has an 8px dark red border and this &lt;th&gt; has a colspan of 4</th>
@@ -71,8 +71,25 @@
                 <div class="subtopic-content">
                     <div  class="subtopic-descriptor">
                         <p>
-                            Keyword Colors, technically "named colors" represent colors in the standard RGB color space.
+                            Keyword Colors, technically "named colors", represent colors in the standard RGB color space.
+                            <br>
+                            <br>
+                            The table to the right shows all named colors supported by all modern browsers. This table is taken from the <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank" >W3Schools HTML Color Names reference</a>.
                         </p>
+                        <table class="pro-con">
+                            <thead>
+                                <tr>
+                                    <td>Biggest Pro</td>
+                                    <td>Biggest Con</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Quick and easy to use</td>
+                                    <td>Can't represent all colors</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="subtopic-demo">
                         <div id="colornamestable" class="w3-row">
@@ -82,9 +99,9 @@
       <span class="colornamespan"><a target="_blank" href="https://www.w3schools.com/colors/color_tryit.asp?color=AliceBlue">AliceBlue</a></span><br>
       <div><span class="colorhexspan"><a target="_blank" href="https://www.w3schools.com/colors/color_tryit.asp?hex=F0F8FF">#F0F8FF</a></span>
         <div class="w3-row colorlinkcontainer" id="colorlinkcontainer1">
-            <div style="float:left;width:50%"><div class="linktocolormixerdiv" id="linktomixer1"><a href="https://www.w3schools.com/colors/colors_mixer.asp?colorbottom=F0F8FF&amp;colortop=FFFFFF" target="_blank">Color Mixertest</a></div></div>
+            <div style="float:left;width:50%"><div class="linktocolormixerdiv" id="linktomixer1"><a href="https://www.w3schools.com/colors/colors_mixer.asp?colorbottom=F0F8FF&amp;colortop=FFFFFF" target="_blank">Color Mixer</a></div></div>
             
-            <div style="float:left;width:50%"><div class="linktocolorpickerdiv" id="linktopicker1"><a href="https://www.w3schools.com/colors/colors_picker.asp?colorhex=F0F8FF" target="_blank">Color Pickertest</a></div></div>
+            <div style="float:left;width:50%"><div class="linktocolorpickerdiv" id="linktopicker1"><a href="https://www.w3schools.com/colors/colors_picker.asp?colorhex=F0F8FF" target="_blank">Color Picker</a></div></div>
     </div>
 
 
@@ -2599,10 +2616,88 @@
                     </div>
                 </div>
             </div>
-                <h4>HEX Codes</h4>
-                <h4>RGB Codes</h4>
-                <h4>RGBA Codes</h4>
-                <h4>HSL Codes</h4>
+            <div class="subtopic">
+                <h4 class="subtitle">HEX Colors</h4>
+                <div class="subtopic-content">
+                    <div  class="subtopic-descriptor">
+                        <p>
+                            HEX Colors, technically Hexadecimal color values, are supported in all browsers. The first 2 characters specify the intensity of red, the second 2 specify for green, and the third 2 specify for blue (e.g. #RRGGBB).
+                        </p>
+                        <table class="pro-con">
+                            <thead>
+                                <tr>
+                                    <td>Biggest Pro</td>
+                                    <td>Biggest Con</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subtopic-demo">
+                    </div>
+                </div>
+            </div>
+            <div class="subtopic">
+                <h4 class="subtitle">RGB and RGBA Colors</h4>
+                <div class="subtopic-content">
+                    <div  class="subtopic-descriptor">
+                        <p>
+                            RGB and RGBA colors are also supported in all browsers. Each parameter (red, green, blue) defines the intensity of the color as an integer between 0 and 255. 
+                        </p>
+                        <table class="pro-con">
+                            <thead>
+                                <tr>
+                                    <td>Biggest Pro</td>
+                                    <td>Biggest Con</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subtopic-demo">
+                    </div>
+                </div>
+            </div>
+            <div class="subtopic">
+                <h4 class="subtitle">HSL Colors</h4>
+                <div class="subtopic-content">
+                    <div  class="subtopic-descriptor">
+                        <p>
+                            HSL colors are supported in IE9+, Firefox, Chrome, Safari, and Opera 10+. HSL stands for Hue, Saturation, Lightness. The first number, hue, represents the degree (from 0 to 360, inclusive) of the hue on the color wheel or spectrum. The second number, saturation, represents the percent saturation of that hue, from 0%, which means none of that hue to 100% which means all that hue. The last number, lightness, is represented as a percent where 0% has no lightness, or is black, and 100% has full lightness, so is white.
+                        </p>
+                        <table class="pro-con">
+                            <thead>
+                                <tr>
+                                    <td>Biggest Pro</td>
+                                    <td>Biggest Con</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subtopic-demo">
+                        <figure>
+                            <img class="subtopic-image" src="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_80/w_2000/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a90c72b5-56f2-4147-94c7-e4245a5e3dfb/2-hsl-colors-css.jpg">
+                            <figcaption>Representation of where different hues appear on the color wheel. Source: Smashing Magazine</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
     </div>
     <h2 id="typography">Typography</h2>
     <div class="topic">
