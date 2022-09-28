@@ -15,6 +15,36 @@ table {
     border: 8px solid rgb(179, 0, 66);
     border-collapse: collapse;
 }
+.topic{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.subtitle {
+    width: auto;
+    background-color: aqua;
+    padding: 8px 16px;
+}
+.subtopic-content {
+    width:auto;
+    display: flex;
+}
+.subtopic-descriptor {
+    background-color: antiquewhite;
+    max-width: 240px;
+    display: inline-block;
+    border-right: 8px white solid;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.subtopic-demo {
+    background-color: bisque;
+    width: 100%;
+    display:inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: scroll;
+}
+
 .vertical-header {
     background-color: rgb(255, 83, 3);
 }
