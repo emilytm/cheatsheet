@@ -37,12 +37,32 @@ table {
     padding-right: 16px;
 }
 .subtopic-demo {
-    background-color: bisque;
+    background-color: #FFF;
     width: 100%;
     display:inline-block;
     padding-left: 16px;
     padding-right: 16px;
     overflow: scroll;
+    max-height: 320px;
+}
+.innerbox {
+    height:60px;
+    padding: 4px 8px;
+}
+
+.innerbox a {
+    color: black;
+}
+#box8 a,#box10 a, #box22 a,#box37 a,#box38 a, #box61 a, #box87 a, #box89 a, #box97 a, #box102 a{
+    color:white;
+}
+
+.colornamespan {
+    padding: 4px 0px;
+}
+.colorhexspan {
+    padding: 4px 0px;
+    font-weight: bold;
 }
 
 .vertical-header {
