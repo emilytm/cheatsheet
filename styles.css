@@ -4,8 +4,11 @@
     font-family: 'Inter Tight',Helvetica, sans-serif;
 }
 
-body {
-    margin: 24px;
+
+
+.banner {
+    position:sticky !important;
+    top: 0px;
 }
 
 table {
@@ -43,4 +46,29 @@ td {
     padding: 8px;
     font-weight: 400;
     color:indigo;
+}
+
+.banner {
+    background-color: rgb(255, 199, 130);
+}
+
+div h5 {
+    display: inline-block;
+    color:rgb(179, 0, 66);
+    padding: 4px 36px;
+}
+
+div a {
+    color:rgb(179, 0, 66);
+    text-decoration: none;
+}
+
+h2 {
+    background-color: bisque;
+    padding: 16px 24px;
+    color:rgb(179, 0, 66);
+}
+
+header {
+    color: rgb(179,0,66);
 }
