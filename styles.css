@@ -72,3 +72,25 @@ h2 {
 header {
     color: rgb(179,0,66);
 }
+
+#top-button {
+    position: fixed !important;
+    bottom: 40px;
+    right: 40px;
+    background-color: gold;
+    padding: 8px;
+    font-weight: bold;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+#top-button a{
+    padding-right: 8px;
+}
+
+
+#up-arrow {
+    padding: 4px 8px;
+    color: rgb(179, 0, 66)
+}
