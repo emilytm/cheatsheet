@@ -65,7 +65,10 @@
     </div>
     <h2 id="colors">Colors</h2>
     <div class="topic">
-        <h3>There are multiple ways to select colors.</h3>
+        <div class="topic-description">
+            <p>There are multiple ways to select colors. The ones I have learned so far are outlined below. All of these different ways to refer to colors can be used for both foreground and background colors, where "color" refers to foreground (e.g. text) while "background-color" refers to background.</p>
+            <p>While any of these methods can be used, it is best to choose one and stick to it for any single project because it is easier to read and easier to compare HEX to HEX or RGB to RGB.</p>
+        </div>
             <div class="subtopic">
                 <h4 class="subtitle">Keyword Colors</h4>
                 <div class="subtopic-content">
@@ -2617,11 +2620,13 @@
                 </div>
             </div>
             <div class="subtopic">
-                <h4 class="subtitle">HEX Colors</h4>
+                <h4 class="subtitle">HEX and HEXA Colors</h4>
                 <div class="subtopic-content">
                     <div  class="subtopic-descriptor">
                         <p>
-                            HEX Colors, technically Hexadecimal color values, are supported in all browsers. The first 2 characters specify the intensity of red, the second 2 specify for green, and the third 2 specify for blue (e.g. #RRGGBB).
+                            HEX and HEXA Colors, technically Hexadecimal color values, are supported in all browsers. The first 2 characters specify the intensity of red, the second 2 specify for green, and the third 2 specify for blue (e.g. #RRGGBB). The optional last 2 characters specify the alpha value or transparency.
+                            <br>
+                            When both characters of all 3 colors are repeated (e.g. 0000ff) the color can be abbreviated to only 3 values (e.g. 00f). This also applies to 8-digit hex codes that include alpha values (e.g. #00ff3388 is the same as #0f38).
                         </p>
                         <table class="pro-con">
                             <thead>
@@ -2632,13 +2637,17 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
+                                    <td>Most common and therefore likely most easily readable</td>
+                                    <td>Using the abbreviated form isn't best practice</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="subtopic-demo">
+                        <figure>
+                            <img class="subtopic-image-tall" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5b51d8f7-d035-4a89-b59b-ad0dab49de32/hex-additive-and-subtractive.png">
+                            <figcaption>Representation of how different values for each couplet of the HEX color code affect the color it represents. Source: Smashing Magazine.</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -2647,7 +2656,7 @@
                 <div class="subtopic-content">
                     <div  class="subtopic-descriptor">
                         <p>
-                            RGB and RGBA colors are also supported in all browsers. Each parameter (red, green, blue) defines the intensity of the color as an integer between 0 and 255. 
+                            RGB and RGBA colors are also supported in all browsers. Each parameter (red, green, blue) defines the intensity of the color as an integer between 0 and 255 (or as a percent where 100% represents 255). When a 4th value is included it represents the alpha value or opacity on a scale of 0.0 to 1.0.
                         </p>
                         <table class="pro-con">
                             <thead>
@@ -2658,22 +2667,26 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
+                                    <td>Closest to how computers represent colors internally</td>
+                                    <td>Making small adjustments (e.g. trying to make it slightly darker) may affect all 3 components</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="subtopic-demo">
+                        <figure>
+                            <img class="subtopic-image-tall" src="https://engineering.purdue.edu/~abe305/HTMLS/IMAGES/rgb1.gif">
+                            <figcaption>Represents the way that varying levels of red, green, and blue affect the color represented by the RGB code. Source: Purdue University.</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
             <div class="subtopic">
-                <h4 class="subtitle">HSL Colors</h4>
+                <h4 class="subtitle">HSL and HSLA Colors</h4>
                 <div class="subtopic-content">
                     <div  class="subtopic-descriptor">
                         <p>
-                            HSL colors are supported in IE9+, Firefox, Chrome, Safari, and Opera 10+. HSL stands for Hue, Saturation, Lightness. The first number, hue, represents the degree (from 0 to 360, inclusive) of the hue on the color wheel or spectrum. The second number, saturation, represents the percent saturation of that hue, from 0%, which means none of that hue to 100% which means all that hue. The last number, lightness, is represented as a percent where 0% has no lightness, or is black, and 100% has full lightness, so is white.
+                            HSL and HSLA colors are supported in IE9+, Firefox, Chrome, Safari, and Opera 10+. HSL stands for Hue, Saturation, Lightness. The first number, hue, represents the degree (from 0 to 360, inclusive) of the hue on the color wheel or spectrum. The second number, saturation, represents the percent saturation of that hue, from 0%, which means none of that hue to 100% which means all that hue. The last number, lightness, is represented as a percent where 0% has no lightness, or is black, and 100% has full lightness, so is white. When a 4th value is added it reresents the alpha value (transparency) where 0.0 (or "transparent") is totally transparent and 1.0 is totally opaque.
                         </p>
                         <table class="pro-con">
                             <thead>
@@ -2684,8 +2697,10 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>TBD</td>
-                                    <td>TBD</td>
+                                    <td>More intuitive, easier to create a set of matching colors within the same hue
+
+                                    </td>
+                                    <td>Not perceptually uniform (e.g. 2 colors with the same lightness can appear to have different lightness)</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2693,27 +2708,27 @@
                     <div class="subtopic-demo">
                         <figure>
                             <img class="subtopic-image" src="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_80/w_2000/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a90c72b5-56f2-4147-94c7-e4245a5e3dfb/2-hsl-colors-css.jpg">
-                            <figcaption>Representation of where different hues appear on the color wheel. Source: Smashing Magazine</figcaption>
+                            <figcaption>Representation of where different hues appear on the color wheel. Source: Smashing Magazine.</figcaption>
                         </figure>
                     </div>
                 </div>
             </div>
     </div>
-    <h2 id="typography">Typography</h2>
+    <h2 id="typography">Typography (Coming Soon)</h2>
     <div class="topic">
-        <h3>There are multiple ways to select colors.</h3>
+        <!--<h3>There are multiple ways to select colors.</h3>
         <h4>HEX Codes</h4>
         <h4>RGB Codes</h4>
         <h4>RGBA Codes</h4>
-        <h4>HSL Codes</h4>
+        <h4>HSL Codes</h4>-->
     </div>
-    <h2 id="positioning">Positioning</h2>
+    <h2 id="positioning">Positioning (Work in Progress)</h2>
     <div class="topic">
-        <h3>There are multiple ways to select colors.</h3>
-        <h4>HEX Codes</h4>
-        <h4>RGB Codes</h4>
-        <h4>RGBA Codes</h4>
-        <h4>HSL Codes</h4>
+        <h3>Elements in HTML have various attributes that control where and how they appear on the page, if at all.</h3>
+        <figure>
+            <img src="resources/boxmodel.png">
+            <figcaption>Resource I made for remembering how these attributes work together to place and style content.</figcaption>
+        </figure>
     </div>
 </body>
 </html>

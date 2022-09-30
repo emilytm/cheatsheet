@@ -28,6 +28,7 @@
 .pro-con td {
     border: 1px rgb(214, 118, 0) solid;
     border-collapse:collapse;
+    vertical-align: text-top;
 }
 
 .topic{
@@ -46,6 +47,12 @@
 }
 .subtopic-image {
     width: 100%;
+}
+.subtopic-image-tall {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 figcaption {
     font-size: 10px;
