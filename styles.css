@@ -46,10 +46,12 @@
     display: flex;
 }
 .subtopic-image {
-    width: 100%;
+    max-width: 100%;
+    max-height: 320px;
 }
 .subtopic-image-tall {
-    height: 100%;
+    max-height: 320px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -61,7 +63,7 @@ figcaption {
 }
 .subtopic-descriptor {
 
-    max-width: 240px;
+    max-width: 440px;
     display: inline-block;
     border-right: 8px white solid;
     padding-left: 16px;
