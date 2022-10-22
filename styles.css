@@ -7,29 +7,32 @@
 .codebox {
     background-color: darkblue;
     width:66%;
-    max-height: 500px !mportant;
     overflow: scroll;
 }
-.codebox p {
-    color:antiquewhite;
+.code {
     font-family: Courier,monospace;
     font-size: smaller;
     margin-block-start: .5em;
     margin-block-end:.5em;
+    color: gold;
 }
-.codebox p.code-comment {
+.codebox p.comment {
     color:gainsboro;
 
 }
-.codebox p.code-selector {
+.codebox p.selector {
     color: chartreuse;
     font-weight: bolder;
 }
-.codebox p.code-declaration {
-    color: gold;
+.codebox p.declaration {
     margin-left: 8px;
 }
-
+.typ-code{
+    background-color:darkblue;
+}
+.typ-display{
+    background-color: antiquewhite;
+}
 
 .banner {
     position:sticky !important;

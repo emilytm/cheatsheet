@@ -2754,35 +2754,35 @@
                   </div>
               <div class="subtopic-demo">
                 <div class="codebox subtopic-demo subtopic-image-tall">
-                  <p class="code-comment">
+                  <p class="code comment">
                     <br>
                     Assign a font-family with a fallback font to the p element:<br></p>
-                    <p class="code-selector">
+                    <p class="code selector">
                     
-                    p {<br></p><p class="code-declaration">
-                      font-family: Georgia, serif;<br></p><p class="code-selector">
-                    }</p><p class="code-comment">
+                    p {<br></p><p class="code declaration">
+                      font-family: Georgia, serif;<br></p><p class="code selector">
+                    }</p><p class="code comment">
                     <br>
                     Import self-hosted fonts directly into the CSS document:
-                    <br></p><p class="code-selector">
-                    @font-face {<br></p><p class="code-declaration">
+                    <br></p><p class="code selector">
+                    @font-face {<br></p><p class="code declaration">
                       font-family: "Fira Sans";<br>
                       font-style: normal;<br>
                       font-weight: 400;<br>
                       src: url('fonts/fira/FiraSans-Regular.woff2') format('woff2'),<br>
                            url('fonts/fira/FiraSans-Regular.woff') format('woff'),<br>
-                           url('fonts/fira/FiraSans-Regular.ttf') format('truetype');<br></p><p class="code-selector">
-                    }</p><p class="code-comment">
+                           url('fonts/fira/FiraSans-Regular.ttf') format('truetype');<br></p><p class="code selector">
+                    }</p><p class="code comment">
                     <br>
                     Import web-hosted fonts (like Google Fonts) directly into the CSS document:
-                    <br></p><p class="code-selector">
-                    @font-face {<br></p><p class="code-declaration">
+                    <br></p><p class="code selector">
+                    @font-face {<br></p><p class="code declaration">
                       font-family: 'Roboto Condensed';<br>
                       font-style: normal;<br>
                       font-weight: 300;<br>
                       font-display: swap;<br>
                       src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCQYb9lecyU.woff2) format('woff2');
-                      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;<br></p><p class="code-selector">
+                      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;<br></p><p class="code selector">
                     }</p>
                   </p>
                 </div>
@@ -2816,6 +2816,48 @@
                   <li>text-decoration can be used to apply an underline, overline, line-through, or some combination of those. It is possible to change the color, thickness, and style of the lines added with text-decoration's constituent properties.</li>
                   <li>font-weight controls how bold or thin the letters are. Some fonts provide specific weight options (e.g. 400 and 800) while others provide none or all of the options. It can be set with numeric, normal, and relative keyword values.</li>
                 </ul>
+              </div>
+              <div class="subtopic-demo">
+                <div class="typ-display">
+                  <table>
+                    <tr>
+                      <td>Normal</td>
+                      <td>Hello</td>
+                    </tr>
+                    <tr>
+                      <td>font-size: 48px</td>
+                      <td style="font-size:48px;">Hello</td>
+                    </tr>
+                    <tr>
+                      <td>font-size: larger</td>
+                      <td style="font-size:larger;">Hello</td>
+                    </tr>
+                    <tr>
+                      <td>font-size: x-small</td>
+                      <td style="font-size:x-small;">Hello</td>
+                    </tr>
+                    <tr>
+                      <td>font-size: 1.4em</td>
+                      <td style="font-size:1.4em;">Hello</td>
+                    </tr>
+                    <tr>
+                      <td>font-style:italic</td>
+                      <td style="font-style:italic;">Hello</td>
+                    </tr>
+                    <tr>
+                      <td>text-decoration: magenta wavy underline</td>
+                      <td style="text-decoration: magenta wavy underline;">Hello</td>
+                    </tr>
+                    <tr>
+                      <td>font-weight: bolder</td>
+                      <td style="font-weight: bolder;">Hello</td>
+                    </tr>
+                    <tr>
+                      <td>font-weight: 100</td>
+                      <td style="font-weight: 100;">Hello</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
