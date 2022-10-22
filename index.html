@@ -2646,7 +2646,7 @@
                     <div class="subtopic-demo">
                         <figure>
                             <img class="subtopic-image-tall" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5b51d8f7-d035-4a89-b59b-ad0dab49de32/hex-additive-and-subtractive.png">
-                            <figcaption>Representation of how different values for each couplet of the HEX color code affect the color it represents. Source: Smashing Magazine.</figcaption>
+                            <figcaption>Representation of different values for each couplet of the HEX color code. Source: Smashing Magazine.</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -2676,7 +2676,7 @@
                     <div class="subtopic-demo">
                         <figure>
                             <img class="subtopic-image-tall" src="https://engineering.purdue.edu/~abe305/HTMLS/IMAGES/rgb1.gif">
-                            <figcaption>Represents the way that varying levels of red, green, and blue affect the color represented by the RGB code. Source: Purdue University.</figcaption>
+                            <figcaption>Represents varying levels of red, green, and blue and their resulting color. Source: Purdue University.</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -2752,18 +2752,50 @@
                       </ul>
                     </p>  
                   </div>
+              <div class="subtopic-demo">
+                <div class="codebox subtopic-demo subtopic-image-tall">
+                  <p class="code-comment">
+                    Assign a font-family with a fallback font to the p element:</p>
+                    <p class="code-selector">
+                    <br>
+                    p {<br></p><p class="code-declaration">
+                      font-family: Georgia, serif;<br></p><p class="code-selector">
+                    }</p><p class="code-comment">
+                    <br>
+                    <br>
+                    Import self-hosted fonts directly into the CSS document:
+                    <br></p><p class="code-selector">
+                    @font-face {<br></p><p class="code-declaration">
+                      font-family: "Fira Sans";<br>
+                      font-style: normal;<br>
+                      font-weight: 400;<br>
+                      src: url('fonts/fira/FiraSans-Regular.woff2') format('woff2'),<br>
+                           url('fonts/fira/FiraSans-Regular.woff') format('woff'),<br>
+                           url('fonts/fira/FiraSans-Regular.ttf') format('truetype');<br></p><p class="code-selector">
+                    }</p><p class="code-comment">
+                    <br>
+                    <br>
+                    Import web-hosted fonts (like Google Fonts) directly into the CSS document:
+                    <br></p>
+                    @font-face {<br>
+                      font-family: 'Roboto Condensed';<br>
+                      font-style: normal;<br>
+                      font-weight: 300;<br>
+                      font-display: swap;<br>
+                      src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCQYb9lecyU.woff2) format('woff2');
+                      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;<br>
+                    }
+                  </p>
                 </div>
-              <!--<h3>There are many ways to manipulate the way text appears.</h3>
-              <h4>Fonts with font-family with fallback fonts, font-face, and web fonts</h4>
-              <h4>Modifications to fonts with font-style, font-weight, text-decoration, and more.</h4>
-              <h4>Spacing with line-height, letter-spacing, and more</h4>-->
+              </div>
+            </div>
           </div>
           <div class="subtopic">
             <h4 class="subtitle">Modifications</h4>
             <div class="subtopic-content">
               <div class="subtopic-descriptor">
                 <p>Fonts can be modified in a number of ways, from the obvious ways that are available on word processors 
-                  like making it bold or italic, to the less obvious ways like changing the spacing between letter or words.
+                  like making it bold or italic, to the less obvious ways like changing the spacing between letter or words. There are more than I have listed here and I will add to this list as I learn about new modifications in my learning.
                 </p>
                 <ul>
                   <li>font-size is self-explanatory but has many possible ways to specify the size. To maximize accessibility, it is best to use values that size the font relative to the user's default font size.
@@ -2779,21 +2811,36 @@
                       </li>
                       <li>Percentages (scale the font up when over 100% or down when under 100% relative to the parent element's font size)</li>
                       <li>Math (not going to worry about this for now because it doesn't appear to be supported by most browsers)</li>
-                      <li>Global Values (don't really understand these yet so going to leave this blank for now)</li>
                     </ul>
                   </li>
                   <li>font-style can be normal (the default for the font-family), italic, or oblique (applicable to variable fonts where you can specify the degree of slant).</li>
-                  <li></li>
+                  <li>text-decoration can be used to apply an underline, overline, line-through, or some combination of those. It is possible to change the color, thickness, and style of the lines added with text-decoration's constituent properties.</li>
+                  <li>font-weight controls how bold or thin the letters are. Some fonts provide specific weight options (e.g. 400 and 800) while others provide none or all of the options. It can be set with numeric, normal, and relative keyword values.</li>
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="subtopic">
+            <h4 class="subtitle">Spacing</h4>
+            <div class="subtopic-content">
+              <div class="subtopic-descriptor">
+                <p>Spacing also affects how text appears, both letter-to-letter and line-to-line. 
+                </p>
+                <ul>
+                  <li>letter-spacing sets the horizontal space between characters and can be set with keywords or length values like em and px. Length values are included in addition to the existing space between letters. Using this to an extreme has both accessibility and internationalization ramifications.</li>
+                  <li>word-spacing is similar to letter-spacing but for the horizontal space between words (and it can be set with a percentage).</li>
+                  <li>line-height sets the height between 2 lines of text. It can be set with keywords, length values, percentages, or unitless values, where the number is multiplied by the default value for the item's font size. Length and percentage line-heights don't inherit well, but numbers do.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           </div>
     <h2 id="positioning">Positioning (Work in Progress)</h2>
     <div class="topic">
         <h3>Elements in HTML have various attributes that control where and how they appear on the page, if at all.</h3>
         <figure>
             <img src="resources/boxmodel.png">
-            <figcaption>Resource I made for remembering how these attributes work together to place and style content.</figcaption>
+            <figcaption>Resource I made to remember how attributes work together.</figcaption>
         </figure>
     </div>
 </body>

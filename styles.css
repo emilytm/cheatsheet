@@ -4,6 +4,27 @@
     font-family: 'Inter Tight',Helvetica, sans-serif;
 }
 
+.codebox {
+    background-color: darkblue;
+    width:66%;
+    max-height: 485px !important;
+}
+.codebox p {
+    color:antiquewhite;
+    font-family: Courier,monospace;
+    font-weight: bolder;
+    font-size: smaller;
+}
+.codebox p.code-comment {
+    color:grey;
+}
+.codebox p.code-selector {
+    color: darkorchid;
+}
+.codebox p.code-declaration {
+    color: gold;
+    text-indent: 8px;
+}
 
 
 .banner {
@@ -50,7 +71,7 @@
     max-height: 320px;
 }
 .subtopic-image-tall {
-    max-height: 320px;
+    max-height: 300px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +81,7 @@ figcaption {
     font-size: 10px;
     font-style: italic;
     text-align: right;
+    padding-bottom: 8px;
 }
 .subtopic-descriptor {
 
