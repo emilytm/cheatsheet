@@ -7,23 +7,27 @@
 .codebox {
     background-color: darkblue;
     width:66%;
-    max-height: 485px !important;
+    max-height: 500px !mportant;
+    overflow: scroll;
 }
 .codebox p {
     color:antiquewhite;
     font-family: Courier,monospace;
-    font-weight: bolder;
     font-size: smaller;
+    margin-block-start: .5em;
+    margin-block-end:.5em;
 }
 .codebox p.code-comment {
-    color:grey;
+    color:gainsboro;
+
 }
 .codebox p.code-selector {
-    color: darkorchid;
+    color: chartreuse;
+    font-weight: bolder;
 }
 .codebox p.code-declaration {
     color: gold;
-    text-indent: 8px;
+    margin-left: 8px;
 }
 
 
