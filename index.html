@@ -68,7 +68,10 @@
         <div class="topic-description">
             <p>There are multiple ways to select colors. The ones I have learned so far are outlined below. All of these different ways to refer to colors can be used for both foreground and background colors, where "color" refers to foreground (e.g. text) while "background-color" refers to background.</p>
             <p>While any of these methods can be used, it is best to choose one and stick to it for any single project because it is easier to read and easier to compare HEX to HEX or RGB to RGB.</p>
-        </div>
+            <p>Bad <a href="https://www.solanafoundation.lightning.force.com/1">link</a></p>
+            <p>Bad <a href="https://www.solanafoundation.lightning.force.com/2">link</a></p>
+            <p>Good <a href="https://www.solanafoundation.my.salesforce.com/3">link</a></p>
+          </div>
             <div class="subtopic">
                 <h4 class="subtitle">Keyword Colors</h4>
                 <div class="subtopic-content">
@@ -2719,189 +2722,189 @@
       <div class="topic-description">
           <p>There are many ways to manipulate the way text appears. A few of them are detailed below.</p>
       </div>
-          <div class="subtopic">
-              <h4 class="subtitle">Fonts</h4>
-              <div class="subtopic-content">
-                <div  class="subtopic-descriptor">
-                    <p>
-                        Fonts are specified by assigning a font-family to a text element using CSS.
-                        <br>
-                        <br>
-                        A font-family is what we think of as a font, where there is a style applied to text. 
-                        The family part means that the font includes other variations on the design, like slant and weight.
-                        <br>
-                        <br>
-                        Using a web font ensures that the font you've chosen for your website will be visible on all common systems/browsers. 
-                        You can import external fonts or font files directly into a stylesheet by using the @font-face rule. You can then reference the imported font like normal throughout the rest of the stylesheet.
-                        Using a font stack ensures that if your preferred font won't appear appropriately, a suitable backup font will be applied to preserve the intended design.
-                        <br>
-                        <br>
-                        Some important things to keep in mind:
-                      </p>
-                      <ul>
-                        <li>Fonts often aren't free to use, unless you're using Google Fonts, Adobe Fonts, or web-safe fonts like Arial, Courier New, Georgia, Times New Roman, Trebuchet MS, and Verdana</li>
-                        <li>All major browsers support WOFF/WOFF2 font formats, which is important for when you're linking a font to a document</li>
-                        <li>There are different font formats like TTF, SVG, and EOT that can be used for accomodating legacy browsers. There are tools for converting fonts to other formats like:
-                              <ul>
-                                <li><a href="https://github.com/bramstein/sfnt2woff-zopfli" target="_blank">TTF to WOFF</a></li>
-                                <li><a href="https://fontforge.org/" target="_blank">TTF to SVG</a></li>
-                                <li><a href="https://people.apache.org/~clay/batik/ttf2svg.html" target="_blank">TTF to SVG (alt)</a></li>
-                                <li><a href="https://github.com/google/woff2" target="_blank">TTF to WOFF2</a></li>
-                              </ul>
-                        </li>
-                      </ul>
-                    </p>  
-                  </div>
-              <div class="subtopic-demo">
-                <div class="codebox subtopic-demo subtopic-image-tall">
-                  <p class="code comment">
+      <div class="subtopic">
+          <h4 class="subtitle">Fonts</h4>
+          <div class="subtopic-content">
+            <div  class="subtopic-descriptor">
+                <p>
+                    Fonts are specified by assigning a font-family to a text element using CSS.
                     <br>
-                    Assign a font-family with a fallback font to the p element:<br></p>
-                    <p class="code selector">
-                    
-                    p {<br></p><p class="code declaration">
-                      font-family: Georgia, serif;<br></p><p class="code selector">
-                    }</p><p class="code comment">
                     <br>
-                    Import self-hosted fonts directly into the CSS document:
-                    <br></p><p class="code selector">
-                    @font-face {<br></p><p class="code declaration">
-                      font-family: "Fira Sans";<br>
-                      font-style: normal;<br>
-                      font-weight: 400;<br>
-                      src: url('fonts/fira/FiraSans-Regular.woff2') format('woff2'),<br>
-                           url('fonts/fira/FiraSans-Regular.woff') format('woff'),<br>
-                           url('fonts/fira/FiraSans-Regular.ttf') format('truetype');<br></p><p class="code selector">
-                    }</p><p class="code comment">
+                    A font-family is what we think of as a font, where there is a style applied to text. 
+                    The family part means that the font includes other variations on the design, like slant and weight.
                     <br>
-                    Import web-hosted fonts (like Google Fonts) directly into the CSS document:
-                    <br></p><p class="code selector">
-                    @font-face {<br></p><p class="code declaration">
-                      font-family: 'Roboto Condensed';<br>
-                      font-style: normal;<br>
-                      font-weight: 300;<br>
-                      font-display: swap;<br>
-                      src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCQYb9lecyU.woff2) format('woff2');
-                      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;<br></p><p class="code selector">
-                    }</p>
+                    <br>
+                    Using a web font ensures that the font you've chosen for your website will be visible on all common systems/browsers. 
+                    You can import external fonts or font files directly into a stylesheet by using the @font-face rule. You can then reference the imported font like normal throughout the rest of the stylesheet.
+                    Using a font stack ensures that if your preferred font won't appear appropriately, a suitable backup font will be applied to preserve the intended design.
+                    <br>
+                    <br>
+                    Some important things to keep in mind:
                   </p>
-                </div>
+                  <ul>
+                    <li>Fonts often aren't free to use, unless you're using Google Fonts, Adobe Fonts, or web-safe fonts like Arial, Courier New, Georgia, Times New Roman, Trebuchet MS, and Verdana</li>
+                    <li>All major browsers support WOFF/WOFF2 font formats, which is important for when you're linking a font to a document</li>
+                    <li>There are different font formats like TTF, SVG, and EOT that can be used for accomodating legacy browsers. There are tools for converting fonts to other formats like:
+                          <ul>
+                            <li><a href="https://github.com/bramstein/sfnt2woff-zopfli" target="_blank">TTF to WOFF</a></li>
+                            <li><a href="https://fontforge.org/" target="_blank">TTF to SVG</a></li>
+                            <li><a href="https://people.apache.org/~clay/batik/ttf2svg.html" target="_blank">TTF to SVG (alt)</a></li>
+                            <li><a href="https://github.com/google/woff2" target="_blank">TTF to WOFF2</a></li>
+                          </ul>
+                    </li>
+                  </ul>
+                </p>  
               </div>
+          <div class="subtopic-demo">
+            <div class="codebox subtopic-demo subtopic-image-tall">
+              <p class="code comment">
+                <br>
+                Assign a font-family with a fallback font to the p element:<br></p>
+                <p class="code selector">
+                
+                p {<br></p><p class="code declaration">
+                  font-family: Georgia, serif;<br></p><p class="code selector">
+                }</p><p class="code comment">
+                <br>
+                Import self-hosted fonts directly into the CSS document:
+                <br></p><p class="code selector">
+                @font-face {<br></p><p class="code declaration">
+                  font-family: "Fira Sans";<br>
+                  font-style: normal;<br>
+                  font-weight: 400;<br>
+                  src: url('fonts/fira/FiraSans-Regular.woff2') format('woff2'),<br>
+                        url('fonts/fira/FiraSans-Regular.woff') format('woff'),<br>
+                        url('fonts/fira/FiraSans-Regular.ttf') format('truetype');<br></p><p class="code selector">
+                }</p><p class="code comment">
+                <br>
+                Import web-hosted fonts (like Google Fonts) directly into the CSS document:
+                <br></p><p class="code selector">
+                @font-face {<br></p><p class="code declaration">
+                  font-family: 'Roboto Condensed';<br>
+                  font-style: normal;<br>
+                  font-weight: 300;<br>
+                  font-display: swap;<br>
+                  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCQYb9lecyU.woff2) format('woff2');
+                  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;<br></p><p class="code selector">
+                }</p>
+              </p>
             </div>
           </div>
-          <div class="subtopic">
-            <h4 class="subtitle">Modifications</h4>
-            <div class="subtopic-content">
-              <div class="subtopic-descriptor">
-                <p>Fonts can be modified in a number of ways, from the obvious ways that are available on word processors 
-                  like making it bold or italic, to the less obvious ways like changing the spacing between letter or words. There are more than I have listed here and I will add to this list as I learn about new modifications in my learning.
-                </p>
+        </div>
+      </div>
+      <div class="subtopic">
+        <h4 class="subtitle">Modifications</h4>
+        <div class="subtopic-content">
+          <div class="subtopic-descriptor">
+            <p>Fonts can be modified in a number of ways, from the obvious ways that are available on word processors 
+              like making it bold or italic, to the less obvious ways like changing the spacing between letter or words. There are more than I have listed here and I will add to this list as I learn about new modifications in my learning.
+            </p>
+            <ul>
+              <li>font-size is self-explanatory but has many possible ways to specify the size. To maximize accessibility, it is best to use values that size the font relative to the user's default font size.
                 <ul>
-                  <li>font-size is self-explanatory but has many possible ways to specify the size. To maximize accessibility, it is best to use values that size the font relative to the user's default font size.
-                    <ul>
-                      <li>Absolute-Size Keywords
-                        <br>e.g. xx-small...medium...xxx-large
-                      </li>
-                      <li>Relative-Size Keywords
-                        <br>e.g. smaller, larger
-                      </li>
-                      <li>Lengths (in px, em, ex, or rem)
-                        <br>Pixels means the actual size in pixels, em is a multiplier of the font-size property of the element, ex is a multiplier of the x-height of the font-size property of the element, rem is like em but avoids the compounding problem that ems introduce.
-                      </li>
-                      <li>Percentages (scale the font up when over 100% or down when under 100% relative to the parent element's font size)</li>
-                      <li>Math (not going to worry about this for now because it doesn't appear to be supported by most browsers)</li>
-                    </ul>
+                  <li>Absolute-Size Keywords
+                    <br>e.g. xx-small...medium...xxx-large
                   </li>
-                  <li>font-style can be normal (the default for the font-family), italic, or oblique (applicable to variable fonts where you can specify the degree of slant).</li>
-                  <li>text-decoration can be used to apply an underline, overline, line-through, or some combination of those. It is possible to change the color, thickness, and style of the lines added with text-decoration's constituent properties.</li>
-                  <li>font-weight controls how bold or thin the letters are. Some fonts provide specific weight options (e.g. 400 and 800) while others provide none or all of the options. It can be set with numeric, normal, and relative keyword values.</li>
+                  <li>Relative-Size Keywords
+                    <br>e.g. smaller, larger
+                  </li>
+                  <li>Lengths (in px, em, ex, or rem)
+                    <br>Pixels means the actual size in pixels, em is a multiplier of the font-size property of the element, ex is a multiplier of the x-height of the font-size property of the element, rem is like em but avoids the compounding problem that ems introduce.
+                  </li>
+                  <li>Percentages (scale the font up when over 100% or down when under 100% relative to the parent element's font size)</li>
+                  <li>Math (not going to worry about this for now because it doesn't appear to be supported by most browsers)</li>
                 </ul>
-              </div>
-              <div class="subtopic-demo">
-                <div class="typ-display">
-                  <table>
-                    <tr>
-                      <td>Normal</td>
-                      <td>Hello</td>
-                    </tr>
-                    <tr>
-                      <td>font-size: 48px</td>
-                      <td style="font-size:48px;">Hello</td>
-                    </tr>
-                    <tr>
-                      <td>font-size: larger</td>
-                      <td style="font-size:larger;">Hello</td>
-                    </tr>
-                    <tr>
-                      <td>font-size: x-small</td>
-                      <td style="font-size:x-small;">Hello</td>
-                    </tr>
-                    <tr>
-                      <td>font-size: 1.4em</td>
-                      <td style="font-size:1.4em;">Hello</td>
-                    </tr>
-                    <tr>
-                      <td>font-style:italic</td>
-                      <td style="font-style:italic;">Hello</td>
-                    </tr>
-                    <tr>
-                      <td>text-decoration: magenta wavy underline</td>
-                      <td style="text-decoration: magenta wavy underline;">Hello</td>
-                    </tr>
-                    <tr>
-                      <td>font-weight: bolder</td>
-                      <td style="font-weight: bolder;">Hello</td>
-                    </tr>
-                    <tr>
-                      <td>font-weight: 100</td>
-                      <td style="font-weight: 100;">Hello</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
+              </li>
+              <li>font-style can be normal (the default for the font-family), italic, or oblique (applicable to variable fonts where you can specify the degree of slant).</li>
+              <li>text-decoration can be used to apply an underline, overline, line-through, or some combination of those. It is possible to change the color, thickness, and style of the lines added with text-decoration's constituent properties.</li>
+              <li>font-weight controls how bold or thin the letters are. Some fonts provide specific weight options (e.g. 400 and 800) while others provide none or all of the options. It can be set with numeric, normal, and relative keyword values.</li>
+            </ul>
+          </div>
+          <div class="subtopic-demo">
+            <div class="typ-display">
+              <table>
+                <tr>
+                  <td>Normal</td>
+                  <td>Hello</td>
+                </tr>
+                <tr>
+                  <td>font-size: 48px</td>
+                  <td style="font-size:48px;">Hello</td>
+                </tr>
+                <tr>
+                  <td>font-size: larger</td>
+                  <td style="font-size:larger;">Hello</td>
+                </tr>
+                <tr>
+                  <td>font-size: x-small</td>
+                  <td style="font-size:x-small;">Hello</td>
+                </tr>
+                <tr>
+                  <td>font-size: 1.4em</td>
+                  <td style="font-size:1.4em;">Hello</td>
+                </tr>
+                <tr>
+                  <td>font-style:italic</td>
+                  <td style="font-style:italic;">Hello</td>
+                </tr>
+                <tr>
+                  <td>text-decoration: magenta wavy underline</td>
+                  <td style="text-decoration: magenta wavy underline;">Hello</td>
+                </tr>
+                <tr>
+                  <td>font-weight: bolder</td>
+                  <td style="font-weight: bolder;">Hello</td>
+                </tr>
+                <tr>
+                  <td>font-weight: 100</td>
+                  <td style="font-weight: 100;">Hello</td>
+                </tr>
+              </table>
             </div>
           </div>
-          <div class="subtopic">
-            <h4 class="subtitle">Spacing</h4>
-            <div class="subtopic-content">
-              <div class="subtopic-descriptor">
-                <p>Spacing also affects how text appears, both letter-to-letter and line-to-line. 
-                </p>
-                <ul>
-                  <li>letter-spacing sets the horizontal space between characters and can be set with keywords or length values like em and px. Length values are included in addition to the existing space between letters. Using this to an extreme has both accessibility and internationalization ramifications.</li>
-                  <li>word-spacing is similar to letter-spacing but for the horizontal space between words (and it can be set with a percentage).</li>
-                  <li>line-height sets the height between 2 lines of text. It can be set with keywords, length values, percentages, or unitless values, where the number is multiplied by the default value for the item's font size. Length and percentage line-heights don't inherit well, but numbers do.</li>
-                </ul>
-              </div>
-              <div class="subtopic-demo">
-                <div class="typ-display">
-                  <table>
-                    <tr>
-                      <td>Normal</td>
-                      <td>Hello my name is Emily</td>
-                    </tr>
-                    <tr>
-                      <td>letter-spacing: 1.1em</td>
-                      <td style="letter-spacing:1.1em;">Hello my name is Emily</td>
-                    </tr>
-                    <tr>
-                      <td>word-spacing: 1.1em</td>
-                      <td style="word-spacing:1.1em;">Hello my name is Emily</td>
-                    </tr>
-                    <tr>
-                      <td>line-height: normal</td>
-                      <td style="line-height:normal;">Hello my name is Emily<br>I like to bake</td>
-                    </tr>
-                    <tr>
-                      <td>line-height: 150%</td>
-                      <td style="line-height:150%;">Hello my name is Emily<br>I like to bake</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="subtopic">
+        <h4 class="subtitle">Spacing</h4>
+        <div class="subtopic-content">
+          <div class="subtopic-descriptor">
+            <p>Spacing also affects how text appears, both letter-to-letter and line-to-line. 
+            </p>
+            <ul>
+              <li>letter-spacing sets the horizontal space between characters and can be set with keywords or length values like em and px. Length values are included in addition to the existing space between letters. Using this to an extreme has both accessibility and internationalization ramifications.</li>
+              <li>word-spacing is similar to letter-spacing but for the horizontal space between words (and it can be set with a percentage).</li>
+              <li>line-height sets the height between 2 lines of text. It can be set with keywords, length values, percentages, or unitless values, where the number is multiplied by the default value for the item's font size. Length and percentage line-heights don't inherit well, but numbers do.</li>
+            </ul>
+          </div>
+          <div class="subtopic-demo">
+            <div class="typ-display">
+              <table>
+                <tr>
+                  <td>Normal</td>
+                  <td>Hello my name is Emily</td>
+                </tr>
+                <tr>
+                  <td>letter-spacing: 1.1em</td>
+                  <td style="letter-spacing:1.1em;">Hello my name is Emily</td>
+                </tr>
+                <tr>
+                  <td>word-spacing: 1.1em</td>
+                  <td style="word-spacing:1.1em;">Hello my name is Emily</td>
+                </tr>
+                <tr>
+                  <td>line-height: normal</td>
+                  <td style="line-height:normal;">Hello my name is Emily<br>I like to bake</td>
+                </tr>
+                <tr>
+                  <td>line-height: 150%</td>
+                  <td style="line-height:150%;">Hello my name is Emily<br>I like to bake</td>
+                </tr>
+              </table>
             </div>
           </div>
-          </div>
+        </div>
+      </div>
+    </div>
     <h2 id="positioning">Positioning (Work in Progress)</h2>
     <div class="topic">
         <h3>Elements in HTML have various attributes that control where and how they appear on the page, if at all.</h3>
@@ -2909,6 +2912,36 @@
             <img src="resources/boxmodel.png">
             <figcaption>Resource I made to remember how attributes work together.</figcaption>
         </figure>
+        <div class="subtopic">
+            <h4 class="subtitle">Flexbox</h4>
+            <div class="subtopic-content">
+              <div class="subtopic-descriptor">
+                <p>Flexboxes are a more efficient way to organize content within a container.</p>
+              </div>
+              <div class="subtopic-demo">
+                <div class="flexbox">
+                  <div class="flexbox-child"><h1>1</h1></div>
+                  <div class="flexbox-child"><h1>2</h1></div>
+                  <div class="flexbox-child"><h1>3</h1></div>
+                  <div class="flexbox-child"><h1>4</h1></div>
+                </div>
+              </div>
+<!--
+Setting a div to display:flex makes it so that the items within it scale and move in a way that accommodates changing screen size
+It will not change how the div itself appears - a div with display:flex will still appear on its own line
+  justify-content
+align-items
+flex-grow
+flex-shrink
+flex-basis
+flex
+flex-wrap
+align-content
+flex-direction
+flex-flow
+-->
+            </div>
+          </div>
     </div>
 </body>
 </html>
